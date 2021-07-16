@@ -115,7 +115,7 @@
         <action android:name="android.intent.action.VIEW" />
         <category android:name="android.intent.category.DEFAULT" />
         <category android:name="android.intent.category.BROWSABLE" />
-        <data android:scheme="https" android:host="pedro-depplinktest.000webhostapp.com" />
+        <data android:scheme="https" android:host="pedro-depplinktest.000webhostapp.com" android:pathPrefix="/App/"/>
       </intent-filter>
     </config-file>
   </platform>
