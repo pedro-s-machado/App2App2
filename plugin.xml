@@ -89,7 +89,7 @@
     <config-file parent="/*" target="res/xml/config.xml">
       <universal-links>
           <host name="pedro-depplinktest.000webhostapp.com">
-              <path url="/App/" />
+              <path url="/App/Homepage.html" />
           </host>
       </universal-links>
     </config-file>
@@ -115,7 +115,7 @@
         <action android:name="android.intent.action.VIEW" />
         <category android:name="android.intent.category.DEFAULT" />
         <category android:name="android.intent.category.BROWSABLE" />
-        <data android:scheme="https" android:host="pedro-depplinktest.000webhostapp.com" android:pathPrefix="/App/"/>
+        <data android:scheme="https" android:host="pedro-depplinktest.000webhostapp.com" android:pathPrefix="/App/Homepage.html"/>
       </intent-filter>
     </config-file>
   </platform>
