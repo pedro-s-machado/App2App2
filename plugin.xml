@@ -89,7 +89,7 @@
     <config-file parent="/*" target="res/xml/config.xml">
       <universal-links>
           <host name="pedro-depplinktest.000webhostapp.com">
-              <path url="/" />
+              <path url="/App/" />
           </host>
       </universal-links>
     </config-file>
