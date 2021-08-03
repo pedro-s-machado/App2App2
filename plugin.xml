@@ -38,6 +38,21 @@
       </feature>
     </config-file>
 
+    <config-file parent="/*" target="config.xml">
+      <universal-links>
+        <ios-team-id value="575MFAHC2B" />
+        <host name="outsystemsdev.bancobic.net">
+            <path url="/AppTPP/Home.aspx" />
+        </host>
+        <host name="outsystemsqua.bancobic.net">
+          <path url="/AppTPP/Home.aspx" />
+        </host>
+        <host name="apps.eurobic.pt">
+          <path url="/AppTPP/Home.aspx" />
+      </host>
+      </universal-links>
+    </config-file>
+
 <!-- Objective-C Sources -->
 
     <source-file src="src/ios/CULPlugin.m"/>
@@ -88,9 +103,15 @@
     
     <config-file parent="/*" target="res/xml/config.xml">
       <universal-links>
-          <host name="pedro-depplinktest.000webhostapp.com">
-              <path url="/App/Homepage.html" />
+          <host name="outsystemsdev.bancobic.net">
+              <path url="/AppTPP/Home.aspx" />
           </host>
+          <host name="outsystemsqua.bancobic.net">
+            <path url="/AppTPP/Home.aspx" />
+        </host>
+        <host name="apps.eurobic.pt">
+          <path url="/AppTPP/Home.aspx" />
+      </host>
       </universal-links>
     </config-file>
 
@@ -109,14 +130,5 @@
 
 <!-- sources for package: com.nordnetab.cordova.ul -->
     <source-file src="src/android/com/nordnetab/cordova/ul/UniversalLinksPlugin.java" target-dir="src/com/nordnetab/cordova/ul/"/>
-    
-    <config-file target="AndroidManifest.xml" parent="application/activity">
-      <intent-filter android:autoVerify="true">
-        <action android:name="android.intent.action.VIEW" />
-        <category android:name="android.intent.category.DEFAULT" />
-        <category android:name="android.intent.category.BROWSABLE" />
-        <data android:scheme="https" android:host="pedro-depplinktest.000webhostapp.com" android:pathPrefix="/App/Homepage.html"/>
-      </intent-filter>
-    </config-file>
   </platform>
 </plugin>
