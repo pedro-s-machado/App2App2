@@ -19,7 +19,7 @@ module.exports = {
  */
 function readPreferences(cordovaContext) {
   // read data from projects root config.xml file
-  var configXml = new ConfigXmlHelper(cordovaContext).read();
+  /*var configXml = new ConfigXmlHelper(cordovaContext).read();
   if (configXml == null) {
     console.warn('config.xml not found! Please, check that it exist\'s in your project\'s root directory.');
     return null;
@@ -31,9 +31,10 @@ function readPreferences(cordovaContext) {
     console.warn('<universal-links> tag is not set in the config.xml. Universal Links plugin is not going to work.');
     return null;
   }
+  */
 
-  var xmlPreferences = ulXmlPreferences[0];
-
+  //var xmlPreferences = ulXmlPreferences[0];
+  var xmlPreferences = JSON.parse('{"ios-team-id":[{"$":{"value":"575MFAHC2B"}}],"host":[{"$":{"name":"outsystemsdev.bancobic.net","scheme":"https"},"path":[{"$":{"url":"/AppTPP/Home.aspx"}}]},{"$":{"name":"outsystemsqua.bancobic.net","scheme":"https"},"path":[{"$":{"url":"/AppTPP/Home.aspx"}}]},{"$":{"name":"poc.bancobic.net","scheme":"https"},"path":[{"$":{"url":"/AppTPP/Home.aspx"}}]}]}');
   // read hosts
   var hosts = constructHostsList(xmlPreferences);
 
